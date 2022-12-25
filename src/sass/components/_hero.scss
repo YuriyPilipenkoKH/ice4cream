@@ -88,4 +88,30 @@
 .hero__button-wrapper {
     display: flex;
     gap: 20px;
+    
+}
+
+.hero__image-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.hero__paragraph {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(17 / 12);
+    color: #FCFCFC;
+
+    width: 135px;
+    margin-bottom: 12px;
+}
+
+.hero__paragraph-link {
+
+}
+
+.hero__paragraph-svg {
+    fill: #FCFCFC;
 }
