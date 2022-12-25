@@ -19,10 +19,11 @@
             var(--backgroundColor) 20%  );
     }
 }
-// .contacts {
-//     //  border-bottom: 4px solid var(--backgroundColor);
-//   //  border-bottom-style: double;
-// }
+.contacts {
+  padding-top: 10px;
+    //  border-bottom: 4px solid var(--backgroundColor);
+  //  border-bottom-style: double;
+}
 
 .contacts__cards {
   display: flex;
