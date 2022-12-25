@@ -1,0 +1,88 @@
+//Стили Мобильного меню
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    padding: 12px 32px 10vh;
+    background-color: var(--backgroundColor);
+    transform: translateX(150%);
+    opacity: 0;
+
+
+     transition: all 1000ms var(--transitionTimingFunction);
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+
+.mobile-menu.is-open {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-logo{
+    margin-bottom: 51px;
+}
+
+.mobile-menu-button,
+.mobile-menu-close{
+    // background-color: $mainBgColor;
+    fill: #ffffff;
+    border: none;
+    padding: 0;
+    height: 41px;
+    cursor: pointer;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.mobile-menu-button{
+    @media screen and (min-width: 768px) {
+        margin-right: 30px;
+    }
+}
+
+.mobile-menu-site-nav{
+    margin-bottom: 21vh;
+}
+
+.mobile-menu-item{  
+    text-align: center;
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
+
+.mobile-menu-link{
+    // @extend %link;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    // color: $lightTextColor;
+    // transition: color $transition;
+    
+    &:hover,
+    &:focus{
+        // color: $darkTextColor;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
+
+}
+
+.menu__btn-buy {
+    margin: 0 auto;
+}
