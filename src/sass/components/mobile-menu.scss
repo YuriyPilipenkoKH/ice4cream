@@ -7,7 +7,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 5;
-    padding: 12px 32px 10vh;
+    padding: 12px 32px;
     background-color: var(--backgroundColor);
     transform: translateX(150%);
     opacity: 0;
@@ -37,12 +37,13 @@
 
 .mobile-menu-button,
 .mobile-menu-close{
-    // background-color: $mainBgColor;
+   background-color: transparent;
     fill: #ffffff;
     border: none;
     padding: 0;
     height: 41px;
     cursor: pointer;
+
     @media screen and (min-width: 1200px) {
         display: none;
     }
@@ -66,16 +67,17 @@
 }
 
 .mobile-menu-link{
-    // @extend %link;
+    
     font-weight: 700;
     font-size: 32px;
     line-height: 1.22;
-    // color: $lightTextColor;
-    // transition: color $transition;
-    
+    color: var(--textColor);
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
     &:hover,
     &:focus{
-        // color: $darkTextColor;
+        outline: none;
+        color: var(--accentColor);
     }
     @media screen and (min-width: 768px) {
         font-size: 48px;
@@ -85,4 +87,8 @@
 
 .menu__btn-buy {
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
