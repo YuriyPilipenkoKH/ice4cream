@@ -7,9 +7,9 @@
     width: 100vw;
     height: 100vh;
     z-index: 5;
-    padding: 12px 32px;
+    padding: 20px 40px;
     background-color: var(--backgroundColor);
-    transform: translateX(150%);
+    transform: translateX(100%);
     opacity: 0;
 
 
@@ -22,13 +22,14 @@
 
 
 .mobile-menu.is-open {
-    opacity: 1;
+     opacity: 1;
     transform: translateX(0);
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .mobile-menu-logo{
@@ -43,6 +44,16 @@
     padding: 0;
     height: 41px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        // animation: turbo 10s ease-in-out;
+        .mobile__cross {
+            animation: turbo 10s ease-in-out;
+        }
+        
+    }
 
     @media screen and (min-width: 1200px) {
         display: none;

@@ -135,6 +135,23 @@ body {
     }
   }
 
+  @keyframes turbo {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(1800deg);
+    }
+    50% {
+      transform: rotate(3600deg);
+    }
+    75% {
+        transform: rotate(5400deg);
+      }
+    100% {
+      transform: rotate(7200deg);
+    }
+  }
 // =============================
 // test-title
 // =============================
