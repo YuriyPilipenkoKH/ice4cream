@@ -2,6 +2,54 @@
     background-color: var(--backgroundColor);
 }
 
+.hero__container {
+    // max-width: 480px;
+    // height: 454px;
+    // margin: 0px auto;
+    // padding: 50px 20px 0px;
+    position: relative;
+    background-image: url(../images/dots_M320x50.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(../images/dots_M640x100@2x.png);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/dots_T768x69.png);
+        // max-width: 768px;
+        // padding: 14px 32px 0px;
+        // display: flex;
+        // justify-content: space-between;
+        // height: 349px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/dots_T1536x137@2x.png);
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        height: 664px;
+        padding: 45px 16px 0px;
+        background-image: url(../images/dots_D1200x384.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/dots_D2400x768@2x.png);
+        }
+
+    }
+}
+
 .hero__title {
     font-family: 'Seymour One';
     font-style: normal;
@@ -103,7 +151,8 @@
     padding: 20px 0;
 
     @media screen and(min-width: 1200px) {
-        padding: 42px 0 65px 0; 
+        padding: 70px 0 65px 0; 
+        gap: 16px;
     }
     @media screen and(max-width: 767px) {
         display: none;
@@ -118,6 +167,7 @@
 
     width: 135px;
     margin-bottom: 12px;
+   padding-top: 40px;
 
     @media screen and(min-width: 1200px) {
         font-size: 14px;
@@ -125,6 +175,7 @@
         color: #FCFCFC;     
         
         width: 200px;   
+        padding-top: 55px;
     }
 }
 
@@ -147,4 +198,46 @@
     transition: all var(--transitionDuration) var(--transitionTimingFunction);
           
     fill: var(--textColor);
+}
+// Tim
+.hero_icecream-image {
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+
+    @media screen and (min-width: 768px) {
+        left: 408px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 652px;
+    }
+
+    animation-name: imageMotion;
+    animation-duration: 1.5s;
+    animation-timing-function: var(--transitionTimingFunction);
+    animation-delay: 0s;
+}
+
+@keyframes imageMotion {
+    0% {
+      transform: translateY(100%);
+      opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes descrMotion {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0%;
+    }
+    80% {
+      transform: translateX(0%);
+      opacity: 100%;
+    }
 }
