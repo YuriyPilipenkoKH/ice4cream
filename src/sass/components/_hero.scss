@@ -6,10 +6,86 @@
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
-    line-height: 48px;
+    font-size: 26px;
+    line-height: calc(33 / 26);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
-    color: #FCFCFC;    
+    color: #FCFCFC;
+    width: 250px;
+
+ 
+      @media screen and (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: calc(48 / 38);
+        letter-spacing: 0.04em;
+        width: 400px;        
+      }
+}
+
+.hero__title-emphasis {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: calc(34 / 33); 
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 38px;
+        line-height: calc(48 / 38);
+        letter-spacing: 0.04em;        
+      }
+
+}
+
+.count__number {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase; 
+        
+    color: var(--textColor);
+
+    @media screen and(min-width: 1200px) {
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 56px;       
+    }
+}
+
+.count__text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    
+    color: var(--textColor);
+
+    @media screen and(min-width: 1200px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+.hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.hero__count-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and(max-width: 767px) {
+        display: none;
+    }
+}
+
+.hero__button-wrapper {
+    display: flex;
+    gap: 20px;
 }

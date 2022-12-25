@@ -3,25 +3,28 @@
   background-image: linear-gradient(
     to bottom,
     transparent 25%,
-    var(--backgroundColor) 25%  );
+    var(--backgroundColor) 25%
+  );
 
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(
-            to bottom,
-            transparent 50%,
-            var(--backgroundColor) 50%  );
-    }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--backgroundColor) 50%
+    );
+  }
 
-    @media screen and (min-width: 1200px) {
-        background-image: linear-gradient(
-            to bottom,
-            transparent 20%,
-            var(--backgroundColor) 20%  );
-    }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 20%,
+      var(--backgroundColor) 20%
+    );
+  }
 }
 .contacts {
   padding-top: 10px;
-    //  border-bottom: 4px solid var(--backgroundColor);
+  //  border-bottom: 4px solid var(--backgroundColor);
   //  border-bottom-style: double;
 }
 
@@ -32,9 +35,9 @@
   gap: 16px;
 
   @media screen and (min-width: 768px) {
-   flex-direction: row;
-   justify-content: center;
-   gap: 32px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
   }
 }
 .contacts__card {
@@ -55,185 +58,183 @@
   }
 
   outline: 1px solid teal;
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
+ 
+
+  &:hover {
+    scale: 1.05;
+  }
 }
 .contacts__card-title {
-    display: inline-block;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    background-color: #F8D24E;
-    border-radius: 4px;
-    padding: 4px 22px;
-    color: #131313;
+  background-color: #f8d24e;
+  border-radius: 4px;
+  padding: 4px 22px;
+  color: #131313;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: calc(22 / 16);  
-        margin-bottom: 32px;
-      }
-     
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    margin-bottom: 32px;
+  }
 }
 .contacts__card-city {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    letter-spacing: 0.04em;
-    
-    color: #131313;
-    margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-        margin-bottom: 12px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: calc(30 / 16);
-        margin-bottom: 8px;
-    }
-    
+  color: #131313;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    margin-bottom: 8px;
+  }
 }
 .contacts__card-link {
-    text-decoration: none;
+  text-decoration: none;
 
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
+  &:hover,
+  &:focus {
+    outline: none;
     transition: all var(--transitionDuration) var(--transitionTimingFunction);
-    &:hover,
-    &:focus {
-      outline: none;
+    & .contacts__card-address {
       transition: all var(--transitionDuration) var(--transitionTimingFunction);
-      & .contacts__card-address {
-        transition: all var(--transitionDuration) var(--transitionTimingFunction);
-        font-weight: 700;
-       text-decoration: underline;
-      }
-    }   
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
 }
 .contacts__card-address {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);
-    letter-spacing: 0.04em;
-    
-    color: #D6936D;   
-    
-    margin-bottom: 24px;
-    width: 220px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
 
-    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+  color: #d6936d;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-        width: 170px;
-        margin-bottom: 32px;
-      }
-      @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: calc(29 / 16);
-        width: 290px;
-       
-      }  
+  margin-bottom: 24px;
+  width: 220px;
 
-    
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    width: 170px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(29 / 16);
+    width: 290px;
+  }
 }
-.contacts__schedule-list  {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 
-    padding: 24px 0;
-    margin-bottom: 24px;
-    border:  solid #E1E1E1;
-    border-width: 1px 0 1px 0;
+.contacts__schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
-    @media screen and (min-width: 768px) {
-        padding: 32px 0;
-        margin-bottom: 32px;
-    }
-    @media screen and (min-width: 1200px) {
-        gap: 12px;
-    }
-     
+  padding: 24px 0;
+  margin-bottom: 24px;
+  border: solid #e1e1e1;
+  border-width: 1px 0 1px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
+  }
 }
 .contacts__schedule-day {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12);    
-    
-    color: #131313;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: calc(29 / 16);
-      } 
-    
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
 }
 
 .contacts__schedule-time {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(22 / 12); 
-    
-    color: #ABABAB;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: calc(26 / 14);
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: calc(29 / 16);
-      } 
+  color: #ababab;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
 }
 .contacts__link-tel,
 .contacts__link-mail {
-    display: block;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
-    
-    color: #131313;
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
 
+  color: #131313;
+
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    font-weight: 700;
+    scale: 1.01;
+    color: var(--accentColor);
     transition: all var(--transitionDuration) var(--transitionTimingFunction);
-
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: calc(21 / 14);
-
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: calc(24 / 16);
-
-      } 
-
-      &:hover,
-      &:focus {
-        outline: none;
-        font-weight: 700;
-        scale: 1.01;
-       color: var(--accentColor);
-       transition: all var(--transitionDuration) var(--transitionTimingFunction);
-      }   
+  }
 }
 .contacts__link-tel {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 4px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 4px;
+  }
 }
 
 // =============================
