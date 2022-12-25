@@ -48,8 +48,10 @@
     &:hover,
     &:focus {
         outline: none;
-        // animation: turbo 10s ease-in-out;
+        transition: all 1000ms var(--transitionTimingFunction);
+
         .mobile__cross {
+            fill: var(--accentColor);
             animation: turbo 10s ease-in-out;
         }
         

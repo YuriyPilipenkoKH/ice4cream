@@ -6,8 +6,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 16px;
+    padding: 4px 16px;
 
+    @media screen and (min-width: 1200px) {
+       padding: 12px 16px;
+    }
 
 }
 
@@ -17,6 +20,7 @@
 
     @media screen and(max-width: 1199px) {
         display: none;
+
     }
 }
 
@@ -90,6 +94,7 @@
             transition: all var(--transitionDuration) var(--transitionTimingFunction);
    
             fill: var(--accentColor);
+            animation: turbo 10s ease-in-out;
         }
     }
 }
