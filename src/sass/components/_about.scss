@@ -2,3 +2,79 @@
     padding: 60px 0 50px;
     background-color: var(--backgroundColor);
 }
+
+.about__uppertitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FCFCFC;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: calc(27 / 22);
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 72px;
+    }
+}
+
+.about__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #FCFCFC;
+    width: 200px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: calc(43 / 34);
+
+        text-align: center;
+        letter-spacing: 0.06em;       
+        width: 400px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 400px; 
+    }
+}
+
+
+
+.about__img-wrapper {
+    position: relative;
+
+    width: 280px;
+    height: 300px;
+    background-color: var(--accentColor);
+    border-radius: 48%;
+
+    @media screen and (min-width: 768px) {
+        width: 330px;
+        height: 356px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 490px;
+        height: 530px;
+    }
+}
+.about__picture {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,10 +1,36 @@
 <section class="about" id="about">
     <div class="about__container container">
 
-        <p>tradition and love</p>
-        <h2>how it’s made?</h2>
+        <p class="about__uppertitle">tradition and love</p>
+        <h2 class="about__title">how it’s made?</h2>
 
         <div class="about__img-wrapper">
+            <picture class="about__picture">
+                               
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/cow/cow-m.png 1x,
+                    ./images/cow/cow-m@2x.png 2x"/>
+                          
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                  ./images/cow/cow-t.png 1x,
+                  ./images/cow/cow-t@2x.png 2x"/>
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                  ./images/cow/cow-d.png 1x,
+                  ./images/cow/cow-d@2x.png 2x"/>
+
+                <img
+                  class="products__img"
+                  src="./images/cow/cow-d.png"
+                  alt="picture" />
+
+              </picture>
 
         </div>
 
