@@ -117,8 +117,12 @@
     
     &:hover,
     &:focus {
+
+      
       outline: none;
       .footer__social-icon {
+        animation: spin 500ms var(--transitionTimingFunction);
+        
         fill: #ffffff;
       }
     }
@@ -176,14 +180,11 @@
     color: #FFFFFF;
 
     transition: all var(--transitionDuration) var(--transitionTimingFunction);
-
-    animation-duration: 250ms;
-    animation-timing-function: var(--transitionTimingFunction);
   
 
     &:hover,
     &:focus {
-      animation-name: rotate;
+      animation: rotate 250ms var(--transitionTimingFunction);
       transition: all var(--transitionDuration) var(--transitionTimingFunction);
       outline: none;
       color: var(--accentColor);

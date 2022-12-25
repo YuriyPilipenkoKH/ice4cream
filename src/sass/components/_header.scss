@@ -39,7 +39,7 @@
 }
 
 .header__logo-svg {
-
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
     fill: var(--accentColor);
 
 }
