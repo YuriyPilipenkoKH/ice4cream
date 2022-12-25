@@ -199,11 +199,15 @@
           
     fill: var(--textColor);
 }
+
+.hero__description {
+    animation: descrMotion 1500ms var(--transitionTimingFunction);
+}
 // Tim
 .hero_icecream-image {
     position: absolute;
     bottom: 0px;
-    left: 25%;
+    left: 29%;
 
     @media screen and (min-width: 768px) {
         left: 408px;
