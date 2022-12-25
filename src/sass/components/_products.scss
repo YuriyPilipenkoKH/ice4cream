@@ -40,7 +40,7 @@
     text-transform: uppercase;
     
     color: var(--primaryColor);    
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 
     @media screen and (min-width: 768px) {
         font-size: 34px;
@@ -56,23 +56,78 @@
     }
 }
 
+
 .products__list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 160px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 29px;
+    }
 }
 
 .products__list-item {
+    position: relative;
+
     width: 280px;
     height: 420px;
-    padding: 120px 40px 26px;
+    padding: 120px 40px 20px;
     border-radius: 24px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 420px;
+        padding: 120px 25px 20px;
+        border-radius: 0 0 24px  24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+        height: 536px;
+        padding: 190px 60px 60px;
+    }
+
+}
+
+.products__img-wrapper {
+    position: absolute;
+    top: -110px;
+    left: 40px;
+
+    width: 200px;
+    height: 210px;
+    border-radius: 100px;
+
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    @media screen and (min-width: 768px) {
+        top: -110px;
+        left: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 302px;
+        height: 318px; 
+        border-radius: 151px;      
+
+        top: -161px;
+        left: 32px;
+    }
+   
 }
 
 .products__list-title {
@@ -85,6 +140,19 @@
     
     color: var(--primaryColor);
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+        line-height: calc(27 / 22);
+       
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: calc(37 / 30);
+    
+    }
 }
 
 .products__list-text {
@@ -98,6 +166,19 @@
     
     color: var(--primaryColor);
     // margin-bottom: auto;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: calc(25 / 14);
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: calc(28 / 16);
+        letter-spacing: 0.04em;
+                
+    }
 }
 
 .item__color-green {

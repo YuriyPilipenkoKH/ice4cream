@@ -1,11 +1,43 @@
-<section class="products">
+<section class="products" id="products">
     <div class="products__container container">
 
         <p class="products__uppertitle">100% natural</p>
         <h2 class="products__title">products</h2>
-
+ <!-- ==============================================================  -->
         <ul class="products__list">
+
             <li class="products__list-item item__color-green">
+
+                <div class="products__img-wrapper item__color-green">
+                    <picture>
+                               
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            ./images/prod/icecream-m.png 1x,
+                            ./images/prod/icecream-m@2x.png 2x"/>
+                                  
+                        <source
+                          media="(min-width: 768px) and (max-width: 1199px)"
+                          srcset="
+                          ./images/prod/icecream-t.png 1x,
+                          ./images/prod/icecream-t@2x.png 2x"/>
+
+        
+                        <source
+                          media="(min-width: 1200px)"
+                          srcset="
+                          ./images/prod/icecream-d.png 1x,
+                          ./images/prod/icecream-d@2x.png 2x"/>
+        
+                        <img
+                          class="products__img"
+                          src="./images/prod/icecream-d.png"
+                          alt="picture" />
+
+                      </picture>
+                </div>
+                <!-- <source srcset="./images/about/img-2-lg.jpg" media="(min-width: 1247px)" -->
                 <div>
                     <h3 class="products__list-title">ice cream</h3>
                     <p class="products__list-text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
@@ -20,6 +52,37 @@
             </li>
            <!-- ==============================================================  -->
             <li class="products__list-item item__color-orange">
+
+                <div class="products__img-wrapper item__color-orange">
+                    <picture>
+                               
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            ./images/prod/icecoffee-m.png 1x,
+                            ./images/prod/icecoffee-m@2x.png 2x"/>
+                                  
+                        <source
+                          media="(min-width: 768px) and (max-width: 1199px)"
+                          srcset="
+                          ./images/prod/icecoffee-t.png 1x,
+                          ./images/prod/icecoffee-t@2x.png 2x"/>
+
+        
+                        <source
+                          media="(min-width: 1200px)"
+                          srcset="
+                          ./images/prod/icecoffee-d.png 1x,
+                          ./images/prod/icecoffee-d@2x.png 2x"/>
+        
+                        <img
+                          class="products__img"
+                          src="./images/prod/icecoffee-d.png"
+                          alt="picture" />
+
+                      </picture>
+                </div>
+
                 <div>
                     <h3 class="products__list-title">ice coffee</h3>
                     <p class="products__list-text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers
@@ -34,6 +97,37 @@
             </li>
           <!-- ============================================================================= -->
             <li class="products__list-item item__color-pink">
+
+                <div class="products__img-wrapper item__color-pink">
+                    <picture>
+                               
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            ./images/prod/milkshake-m.png 1x,
+                            ./images/prod/milkshake-m@2x.png 2x"/>
+                                  
+                        <source
+                          media="(min-width: 768px) and (max-width: 1199px)"
+                          srcset="
+                          ./images/prod/milkshake-t.png 1x,
+                          ./images/prod/milkshake-t@2x.png 2x"/>
+
+        
+                        <source
+                          media="(min-width: 1200px)"
+                          srcset="
+                          ./images/prod/milkshake-d.png 1x,
+                          ./images/prod/milkshake-d@2x.png 2x"/>
+        
+                        <img
+                          class="products__img"
+                          src="./images/prod/milkshake-d.png"
+                          alt="picture" />
+
+                      </picture>
+                </div>
+
                 <div>
                     <h3 class="products__list-title">milkshakes</h3>
                     <p class="products__list-text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice
@@ -47,6 +141,6 @@
 
             </li>
         </ul>
-
+ <!-- ==============================================================  -->
     </div>
 </section>
