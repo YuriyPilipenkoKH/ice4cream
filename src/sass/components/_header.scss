@@ -26,8 +26,9 @@
     &:focus {
         animation: rotate 250ms var(--transitionTimingFunction) ;
         outline: none;
+        transition: all var(--transitionDuration) var(--transitionTimingFunction);
         .header__logo-svg {
-            
+            transition: all var(--transitionDuration) var(--transitionTimingFunction);
             fill: var(--textColor);
             scale: 1.4;
         }
@@ -46,6 +47,7 @@
     line-height: calc(20 / 16);
     
     color: var(--textColor);
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
     
     &:hover,
     &:focus {
@@ -61,4 +63,37 @@
     @media screen and(max-width: 767px) {
         display: none;
     }
+}
+.header__button-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.mobile__menu {
+    @media screen and(min-width: 1200px) {
+        display: none;
+    }
+
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+    &:hover,
+    &:focus {
+        animation: rotate 250ms var(--transitionTimingFunction) ;
+        outline: none;
+        color: var(--accentColor);
+        transition: all var(--transitionDuration) var(--transitionTimingFunction);
+   
+        & .mobile__menu-svg {
+            transition: all var(--transitionDuration) var(--transitionTimingFunction);
+   
+            fill: var(--accentColor);
+        }
+    }
+}
+
+
+.mobile__menu-svg {
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+   
+    fill: var(--white);
 }

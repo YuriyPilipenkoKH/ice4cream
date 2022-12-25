@@ -394,10 +394,14 @@
 
   &:hover,
   &:focus {
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
     background-color: var(--btn-hoverColor);
     animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
     outline: none;
     color: var(--extrabackgroundColor);
     background-color: var(--btn-hoverColor);
@@ -446,22 +450,27 @@
 
   background-color: var(--accentColor);
 
-  transition-property: background-color, color;
-  transition-duration: var(--transitionDuration);
-  transition-timing-function: var(--transitionTimingFunction);
+  transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
 
   &:hover,
   &:focus {
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
     background-color: var(--btn-hoverColor);
     animation: rotate 250ms var(--transitionTimingFunction) ;
   }
   &:focus {
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
     outline: none;
     color: var(--extrabackgroundColor);
     background-color: var(--btn-hoverColor);
 
     &::after {
       content: '—';
+      transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
       color: transparent;
       background: url(../images/but/arrow-w.svg) no-repeat right center;
     }
@@ -475,6 +484,8 @@
   }
   &::after {
     content: '—';
+    transition: all var(--transitionDuration) var(--transitionTimingFunction);
+
     color: transparent;
     background: url(../images/but/arrow-b.svg) no-repeat right center;
   }
