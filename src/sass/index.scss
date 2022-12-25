@@ -1,2 +1,8 @@
-@import './common';
-@import './example';
+@import './utils/variebles';
+@import './base/common';
+@import './base/fonts';
+@import './base/global';
+// @import './utils/button';
+
+@import './components/contacts';
+@import './components/footer';
