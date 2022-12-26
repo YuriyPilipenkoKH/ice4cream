@@ -35,6 +35,7 @@
   }
   
   .back-to-home::before {
+    content: '';
     width: 5px;
     height: 25px;
     border-top-left-radius: 3px;
@@ -43,6 +44,7 @@
   }
   
   .back-to-home::after {
+    content: '';
     width: 15px;
     height: 15px;
     transform: translate(-50%, -50%) rotate(45deg);
