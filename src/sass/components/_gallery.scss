@@ -1,0 +1,27 @@
+.gallery__slider {
+    border: 2x solid blue;
+    min-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+} 
+
+.gallery__slider-line {
+    display: flex; 
+    transition: all  ease 1s;
+}
+
+.slider-btn-wrap {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.slider-prev,
+.slider-next {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: teal;
+}
