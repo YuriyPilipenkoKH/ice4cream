@@ -1,19 +1,31 @@
 <section class="gallery">
     <div class="gallery__container container">
-        <div class="gallery__slider">
-            <div class="gallery__slider-line">
 
-                <img src="./images/gal/slide__1.jpg" alt="gllery__pic">
-                <img src="./images/gal/slide__2.jpg" alt="gllery__pic">
-                <img src="./images/gal/slide__3.jpg" alt="gllery__pic">
-
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./images/gal/slide__1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gal/slide__2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/gal/slide__3.jpg" alt="">
+              </div>
+              ...
             </div>
-        </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination pag-1"></div>
+          
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>       
 
-        <div class="slider-btn-wrap">
-            <button class="slider-prev">⮜</button>
-            <button class="slider-next">⮞</button>
-        </div>
-
-    </div>
+</div>
 </section>
