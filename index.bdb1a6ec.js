@@ -1,0 +1,2 @@
+var slider=document.querySelector(".swiper"),slider1=document.querySelector(".swiper-2"),swiper=new Swiper(slider,{direction:"horizontal",loop:!0,pagination:{el:".pag-1",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}}),swiper1=new Swiper(slider1,{direction:"horizontal",loop:!0,pagination:{el:".pag-2",clickable:!0},navigation:{nextEl:".swiper-2-button-next",prevEl:".swiper-2-button-prev"}});
+//# sourceMappingURL=index.bdb1a6ec.js.map
