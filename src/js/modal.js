@@ -1,22 +1,26 @@
-$('.container-modal .title').each(function (idx, item) {
-    var winnerId = "winner-" + idx;
-     this.id = winnerId;
-     $(this).click(function(){
-       var btn = $("#winner-" + idx);
-       var span = $(".close");
-       var popId = $('#win-'+ idx);
-       btn.click(function() {
-          $(popId).addClass('on');
-          $('body').addClass('lorem');
-        }); 
-        span.click(function() {
-           $(popId).removeClass('on');
-           $('body').removeClass('lorem');
-         });
-       
-        
-     
-     });
- });
-  
- 
+var within_first_modal = false;
+$('.btn-second-modal').on('click', function() {
+  if ($(this).hasClass('within-first-modal')) {
+    within_first_modal = true;
+    $('#first-modal').modal('hide');
+  }
+  $('#second-modal').modal('show');
+});
+
+$('.btn-second-modal-close').on('click', function() {
+  $('#second-modal').modal('hide');
+  if (within_first_modal) {
+    $('#first-modal').modal('show');
+    within_first_modal = false;
+  }
+});
+
+$('.btn-toggle-fade').on('click', function() {
+  if ($('.modal').hasClass('fade')) {
+    $('.modal').removeClass('fade');
+    $(this).removeClass('btn-success');
+  } else {
+    $('.modal').addClass('fade');
+    $(this).addClass('btn-success');
+  }
+});

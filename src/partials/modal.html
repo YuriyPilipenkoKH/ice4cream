@@ -1,79 +1,56 @@
-<div class="main-content">
+<!-- <div class="container text-center">
+    <h1>Working with Multiple Modals</h1>
+    <div class="margin-lg">
+      <button type="button" class="btn-first-modal btn btn-primary btn-lg" data-toggle="modal" data-target="#first-modal">
+        Launch First Modal
+      </button>
+    </div>
+    <div class="margin-lg">
+      <button type="button" class="btn-second-modal btn btn-primary btn-lg">
+        Launch second Modal
+      </button>
+    </div>
+    <div class="margin-lg">
+      <button type="button" class="btn-toggle-fade btn btn-lg">
+        Toggle Fade
+      </button>
+    </div>
+     -->
   
-    <div class="container-modal">
-       <div class="title">
-          Lorem Ipsum 01
-      </div>
-      <div class="modal" id="win-0">
-          
-         <div class="modal-container">
-           <div class="modal-header">
-             <div class="modal-title">Modal Title 01</div>
-             <span class="close">X</span>
-            </div>
-            <div class="modal-content">
-                Modal Content 01
-            </div>
-         </div>
-        
+    <div class="modal" id="first-modal" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">First Modal</h4>
+          </div>
+          <div class="modal-body">
+            This is the body of my first modal.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-second-modal within-first-modal btn btn-primary">
+              Launch second Modal
+            </button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
-    </div>
-    
-    <div class="container-modal">
-       <div class="title">
-          Lorem Ipsum 02
       </div>
-      <div class="modal" id="win-1">
-          
-         <div class="modal-container">
-           <div class="modal-header">
-             <div class="modal-title">Modal Title 02</div>
-             <span class="close"></span>
-            </div>
-            <div class="modal-content">
-                Modal Content 02
-            </div>
-         </div>
-        
-        </div>
     </div>
-    
-    <div class="container-modal">
-       <div class="title">
-          Lorem Ipsum 03
+  
+    <div class="modal" id="second-modal" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-second-modal-close close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Second Modal</h4>
+          </div>
+          <div class="modal-body">
+            This is the body of my second modal.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-second-modal-close btn btn-default">Close</button>
+          </div>
+        </div>
       </div>
-      <div class="modal" id="win-2">
-          
-         <div class="modal-container">
-           <div class="modal-header">
-             <div class="modal-title">Modal Title 03</div>
-             <span class="close"></span>
-            </div>
-            <div class="modal-content">
-                Modal Content 03
-            </div>
-         </div>
-        
-        </div>
     </div>
-    
-    <div class="container-modal">
-       <div class="title">
-          Lorem Ipsum 04
-      </div>
-      <div class="modal" id="win-3">
-          
-         <div class="modal-container">
-           <div class="modal-header">
-             <div class="modal-title">Modal Title 04</div>
-             <span class="close"></span>
-            </div>
-            <div class="modal-content">
-                Modal Content 04
-            </div>
-         </div>
-        
-        </div>
-    </div>
-    
   </div>
