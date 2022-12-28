@@ -1,6 +1,46 @@
-<div class="popup popup-3" >
-    <div class="popup-container">
+<div class="popup popup-3 " >
+    <div class="popup-container popup__locations">
+
       <a href="#0" class="popup-close img-replace">Close</a>
-      <h1>Responsive Popup 3</h1>
+      <h1 class="popup__title locations__title">Our Locations</h1>
+
+      <picture>
+        <source
+          media="(max-width:767px)"
+          srcset="
+          ./images/poltavaM224x199.png 1x,
+            ./images/poltavaM448x398@2x.png 2x
+          "
+          type="image/jpeg"
+        />
+  
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ./images/poltava448x260.png 1x,
+            ./images/poltava896x520@2x.png 2x
+          "
+          type="image/jpeg"
+        />
+  
+        <img
+          class="contacts-map"
+          src="./images/poltava448x260.png"
+          alt="map"
+        />
+      </picture>
+  
+      <!-- <a
+        class="contacts-link-map" target="_blank"
+              rel="noopener noreferrer nofollow"
+        href="https://www.google.com.ua/maps/@50.5922444,30.5963509,5z?hl=ua"
+        >Open map</a
+      > -->
+
+
+      <button class=" btn__map" type="button" target="_blank"
+      rel="noopener noreferrer nofollow"
+href="https://www.google.com.ua/maps/@50.5922444,30.5963509,5z?hl=ua">Open map</button>
+
     </div> 
   </div> 

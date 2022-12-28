@@ -32,7 +32,7 @@
     height: 100%;
     z-index: 1000;
     width: 100%;
-    background-color: rgba(94, 110, 141, 0.9);
+    background-color: #5e6e8de6;
     opacity: 0;
     visibility: hidden;
     transition:500ms all;
@@ -121,6 +121,18 @@
 
 //   ==========MY styles=========================
 
+.popup-close {
+    border-radius: 50%;
+}
+
+.popup-close {
+    &:hover {
+       
+        background-color: #5e6e8d26;
+        transition:300ms all;
+    }
+}
+
 .popup-buy {
     width: 280px;
     height: 990px;
@@ -128,7 +140,7 @@
 
     overflow: auto;
     border: 3px solid orange;
-    border-radius: 6px;
+    border-radius: 10px;
    
     transform: translate(-50%, -50%) scale(1);
 
@@ -151,9 +163,20 @@
     
     color: #131313;    
     margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 28px;     
+       
+    }
+
+    
+
 }
 
-.popup__list {
+
+
+.popup-buy__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,8 +250,8 @@
 }
 
 .popup__products {
-    position: absolute;
-    top: -50%;
+    position: relative;
+    top: -100%;
     width: 132px;
     height: 140px;
     border-radius: 48%;
