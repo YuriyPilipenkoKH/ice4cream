@@ -197,6 +197,14 @@
 }
 
 .products__list-btn {
+    display: inline-block;
    background-color: transparent;
    border: 0;
+   padding: 7px 15px;
+   cursor: pointer;
+
+   fill: wheat;
+   color:wheat;
+  
+
 }

@@ -1,6 +1,40 @@
 <div class="popup popup-5" >
-    <div class="popup-container">
+    <div class="popup-container popup__ingredients">
+
       <a href="#0" class="popup-close img-replace">Close</a>
-      <h1>Responsive Popup 5</h1>
+<!-- =================slider============================================ -->
+
+      <h1>slider</h1>
+
+      
+<!-- =================slider============================================ -->
+
+      <form class="form__buy">
+        <input
+        class="form__input buy-now__form-input"
+        type="text"
+        name="username"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="form__input buy-now__form-input"
+        type="tel"
+        name="phone"
+        placeholder="Phone"
+        required
+        pattern="^\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})$"
+      />
+      <!-- The pattern see in https://stackoverflow.com/questions/58248441/regex-template-for-ukrainian-phone-numbers -->
+      <textarea
+        class="form__input form__input-textarea "
+        name="comment"
+        placeholder="Comment"
+      ></textarea>
+
+    </form>
+
+      <button class="popup-buy-btn btn__submit" type="button">Submit</button>
+
     </div> 
   </div> 
