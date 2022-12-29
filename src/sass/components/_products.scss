@@ -203,8 +203,13 @@
    padding: 7px 15px;
    cursor: pointer;
 
-   fill: wheat;
-   color:wheat;
+   fill: transparent;
+
+   &:hover,
+   &:focus {
+    outline: none;
+    fill: green;
+   }
   
 
 }
