@@ -1,9 +1,7 @@
 
-// .reviews__container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+.reviews {
+   padding-bottom: 70px;
+}
 
 img {
     display: block;
@@ -12,7 +10,7 @@ img {
     // display: flex;
     // justify-content: center;
     // align-items: center;
-
+position: relative;
     width: 100%;
     height: auto;
       border-radius: 30px;
@@ -50,7 +48,7 @@ img {
         line-height: 186%;
         /* or 26px */
         width: 90%;
-        height: auto;
+        height: 90px;
       }
     
       @media screen and (min-width: 1200px) {
@@ -58,6 +56,8 @@ img {
         font-size: 16px;
         line-height: 186%;
         /* or 30px */
+        width: 90%;
+        height: 90px;
       }
 }
 
@@ -69,11 +69,6 @@ img {
     text-align: center;
     
     color: #131313;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
  
-.next-2 {
-    background-color: yellow;
-    width: 10px;
-    height: 10px;
-}

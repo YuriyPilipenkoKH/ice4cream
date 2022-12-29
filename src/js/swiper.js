@@ -44,7 +44,7 @@ let swiper = new Swiper(slider, {
     },
   
     // And if we need scrollbar
-   //  scrollbar: {
-   //    el: '.swiper-scrollbar',
-   //  },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
   });

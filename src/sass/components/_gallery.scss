@@ -36,15 +36,32 @@
  
     overflow: hidden;
    
+    @media screen and (min-width: 1200px)  {
+      width: 80%;
+    }
 }
 
 
 .swiper-wrapper {
    transition: all  ease 1s;
+   position: relative;
  
 }
 
+// .pag-1 {
+//  position: absolute;
+//   bottom: -40px;
+// }
+.next-1,
+.prev-1 {
 
+  color:#35a785;
 
+}
+
+.ice__pic {
+
+  padding-bottom: 40px;
+}
 
 // ===========================================
